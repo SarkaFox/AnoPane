@@ -1,3 +1,4 @@
+from selenium import webdriver
 from time import sleep
 
 driver = webdriver.Chrome()
@@ -9,7 +10,9 @@ driver.get(HomeURL)
 
 sleep(1)
 
-elementCestovani = driver.find_element_by_xpath('//*[@id="menu-item-6330"]/a')
+# elementCestovani = driver.find_element_by_xpath('//*[@id="menu-item-6330"]/a')
+
+elementCestovani = driver.find_element_by_xpath("//span[text()='Cestování']")
 # if(element.is_displayed())
 elementCestovani.click()
 
