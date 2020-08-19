@@ -4,6 +4,6 @@ from time import sleep
 driver = webdriver.Chrome()
 driver.get("https://digitalninomadstvi.cz")
 
-sleep(3)
+sleep(5)
 
 driver.close()
