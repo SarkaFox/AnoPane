@@ -11,15 +11,14 @@ from selenium.webdriver.common.keys import Keys
 driver = webdriver.Chrome()
 driver.get("https://digitalninomadstvi.cz")
 
-
+#elementMenu = driver.find_element_by_id("menu-hlavni-lista")
 # to wait for web to be ready for next step
 #try:
-#    header = WebDriverWait(driver, 10).until(
-#        EC.presence_of_element_located((By.ID, "header")))
-#finally:
-#    driver.quit()
+#   wait = WebDriverWait(driver, 10)
+#   elementMenu = wait.until(EC.presence_of_element_located((By.ID, "menu-hlavni-lista")))
 
-# elementCestovani = driver.find_element_by_xpath('//*[@id="menu-item-6330"]/a')
+
+#elementCestovani = driver.find_element_by_xpath('//*[@id="menu-item-6330"]/a#)
 
 elementCestovani = driver.find_element_by_xpath("//span[text()='Cestování']")
 # if(element.is_displayed())
@@ -81,4 +80,7 @@ elementPrihlasit = driver.find_element_by_id("wp-submit")
 elementPrihlasit.click()
 sleep(3)
 
+#headers = main.find_element_by_id("menu-hlavni-lista")
+#for header in headers:
+#    header =
 driver.close()
